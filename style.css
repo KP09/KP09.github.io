@@ -1,11 +1,14 @@
-/* General styles */
+/* General */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #546A7B;
+  background-color: #181D27;
+  height: 200vh;
+  margin: 30px 0 0 0;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: 400;
   color: #FEFEFF;
 }
 
@@ -16,6 +19,8 @@ h2 {
 h3 {
   font-size: 20px;
 }
+
+/* Utilities */
 
 .flex-box {
   display: flex;
@@ -40,4 +45,71 @@ h3 {
 .logo {
   height: 75px;
   padding: 0 10px 0 0;
+}
+
+/* Specifics */
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #FEFEFF;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url(images/kees.jpg);
+}
+
+@media (min-width: 768px) {
+  .fixed-container {
+    position: fixed;
+  }
+}
+
+.nav-tabs > a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.nav-tab {
+  background-color: #FEFEFF;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 10px;
+}
+
+.nav-tab.active {
+  color: #FEFEFF;
+  background-color: #DD7230;
+}
+
+.nav-tab:not(.active):hover {
+  background-color: #F2F4F3;
+}
+
+.info-container {
+  background-color: #FEFEFF;
+  padding: 20px;
+  margin: 0 0 30px 0;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -30px;
+  visibility: hidden;
+}
+
+.code-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.code-box {
+  flex: 0 0 150px;
+  text-align: center;
+}
+
+.code-icon {
+  max-width: 50px;
+  max-height: 50px;
 }
