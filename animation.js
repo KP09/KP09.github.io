@@ -6,20 +6,11 @@ $(document).ready(function(){
     $(this).addClass('active');
   })
 
-  // Aid to scroll smoothly to selected anchor
-  function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'medium');
-  }
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 300);
+    return false;
+});
 
-  // Scrolls to the right anchor
-  $("#about").click(function() {
-      event.preventDefault();
-      scrollToAnchor('about');
-    });
-
-  $("#stack").click(function() {
-      event.preventDefault();
-      scrollToAnchor('stack');
-    });
 })
