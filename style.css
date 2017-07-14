@@ -59,10 +59,9 @@ p {
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
-  border: 2px solid #FEFEFF;
-  border-radius: 50%;
+  width: 185px;
+  height: 185px;
+  border-radius: 2px;
   background-size: cover;
   background-image: url(images/kees.jpg);
 }
