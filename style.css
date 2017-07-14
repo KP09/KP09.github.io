@@ -54,6 +54,10 @@ p {
 
 /* Specifics */
 
+.avatar-container  {
+  width: 200px;
+}
+
 .avatar {
   width: 150px;
   height: 150px;
