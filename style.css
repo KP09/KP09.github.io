@@ -262,3 +262,34 @@ p {
 .space {
   min-height: 30vh;
 }
+
+.download-container a:hover {
+  text-decoration: none;
+}
+
+.download {
+  text-align: center;
+  background-color: none;
+  padding: 15px 0;
+  width: 200px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.download:hover {
+  background-color: #DD7230;
+  border: 1px solid #DD7230;
+}
+
+.download h3 {
+  font-size: 16px;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+.download p {
+  font-size: 12px;
+  color: #333333;
+  margin: 0;
+}
