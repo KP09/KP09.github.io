@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kees Postma</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -17,7 +18,7 @@
     <div class="container">
       <div class="row">
         <!-- Avatar, name, and menu -->
-        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-1">
           <div class="fixed-container">
             <div class="avatar-container">
               <div class="avatar">
@@ -26,37 +27,22 @@
             <div>
               <h1>Kees Postma</h1>
             </div>
-            <div class="nav-tabs hidden-xs hidden-sm">
-              <a href="#about">
-                <div class="nav-tab active">About me</div>
-              </a>
-              <a href="#experience">
-                <div class="nav-tab">Experience</div>
-              </a>
-              <a href="#stack">
-                <div class="nav-tab">Tech stack</div>
-              </a>
-              <a href="#projects">
-                <div class="nav-tab">Side projects</div>
-              </a>
-              <a href="#education">
-                <div class="nav-tab">Education</div>
-              </a>
-              <!-- <a href="#achievements" id="achievements">
-                <div class="nav-tab">Achievements</div>
-              </a>
-              <a href="contact" id="contact">
-                <div class="nav-tab">Let's talk</div>
-              </a> -->
-            </div>
+            <nav class="nav-container">
+        			<ul class="nav-list">
+        				<a class="nav-tab active" href="#about"><li>About me</li></a>
+        				<a href="#experience" class="nav-tab"><li>Experience</li></a>
+        				<a href="#stack" class="nav-tab"><li>Tech stack</li></a>
+        				<a href="#projects" class="nav-tab"><li>Side projects</li></a>
+                <a href="#education" class="nav-tab"><li>Education</li></a>
+        			</ul>
+        		</nav>
           </div>
         </div>
         <!-- Content -->
-        <div class="col-xs-12 col-sm-7">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-1 col-md-7 col-md-offset-0">
 
           <!-- About me -->
-          <a name="about" class="anchor"></a>
-          <div class="info-container">
+          <div id="about" class="info-container">
             <h2>About me</h2>
             <p> For the past three years I have been pursuing a career in yacht
                 racing, with an ultimate ambition of competing in and winning
@@ -86,8 +72,7 @@
           </div>
 
           <!-- Professional experience -->
-          <a name="experience" class="anchor"></a>
-          <div class="info-container">
+          <div id="experience" class="info-container">
             <h2>Experience</h2>
             <!-- Le Wagon -->
             <!-- <div class="experience-box">
@@ -265,8 +250,7 @@
           </div>
 
           <!-- Technology stack -->
-          <a name="stack" class="anchor"></a>
-          <div class="info-container">
+          <div id="stack" class="info-container">
             <h2>Tech stack</h2>
             <div class="tech-stack">
               <!-- Languages -->
@@ -336,8 +320,7 @@
           </div>
 
           <!-- Side projects -->
-          <a name="projects" class="anchor"></a>
-          <div class="info-container">
+          <div id="projects" class="info-container">
             <h2>Side projects</h2>
             <div class="project-box flex-box">
               <div class="project-thumbnail" style="background-image: url(images/fixes.jpg);"></div>
@@ -375,8 +358,7 @@
           </div>
 
           <!-- Education -->
-          <a name="education" class="anchor"></a>
-          <div class="info-container">
+          <div id="education" class="info-container">
             <h2>Education</h2>
             <!-- Le Wagon -->
             <div class="experience-box">

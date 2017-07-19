@@ -56,6 +56,7 @@ p {
 
 .avatar-container  {
   width: 200px;
+  margin: 0 auto;
 }
 
 .avatar {
@@ -66,37 +67,62 @@ p {
   background-image: url(images/kees.jpg);
 }
 
-.fixed-container {
-  position: fixed;
+@media (max-width: 767px) {
+  .fixed-container {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-container {
+    display: none;
+  }
 }
 
-.nav-tabs {
+@media (min-width: 768px) {
+  .fixed-container {
+    position: fixed;
+  }
+}
+
+.nav-container {
   border: none;
   width: 200px;
 }
 
-.nav-tabs > a {
-  text-decoration: none;
-  color: #333333;
+.nav-list {
+  padding: 0;
 }
 
 .nav-tab {
+  color: #333333;
   background-color: #FEFEFF;
   height: 50px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 0 0 0 10px;
   clip-path: polygon(0 0, 93% 0, 93% 100%, 0% 100%);
+  transition: all 0.1s ease;
+}
+
+.nav-tab:hover, .nav-tab:focus {
+  color: #333333;
+  text-decoration: none;
 }
 
 .nav-tab.active {
   color: #FEFEFF;
   background-color: #DD7230;
   clip-path: polygon(0% 0%, 93% 0, 100% 50%, 93% 100%, 0% 100%);
+  text-decoration: none;
+}
+
+.nav-tab.active:hover, nav-tab.active:focus {
+  text-decoration: none;
 }
 
 .nav-tab:not(.active):hover {
   background-color: #F2F4F3;
+  text-decoration: none;
 }
 
 .info-container {
@@ -157,19 +183,36 @@ p {
   border: 1px solid #CECCCC;
 }
 
-.project-box {
-  margin: 0 0 20px 0;
-  flex-wrap: wrap;
+@media (max-width: 443px) {
+  .project-box {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .project-thumbnail {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .project-box h3 {
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+  }
 }
 
-.project-box h3 {
-  margin: 0 0 10px 0;
-  font-size: 16px;
-}
+@media (min-width: 444px) {
+  .project-box {
+    margin: 0 0 20px 0;
+    flex-wrap: wrap;
+  }
 
-.project-info {
-  padding: 0 0 0 10px;
-  flex: 1 0 200px;
+  .project-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+
+  .project-info {
+    padding: 0 0 0 10px;
+    flex: 1 0 200px;
+  }
 }
 
 .company-icon-box {
