@@ -138,7 +138,7 @@ p {
   visibility: hidden;
 }
 
-.tech-stack > h3 {
+.tech-stack > h3, .downloads-container > h3 {
   font-size: 16px;
   font-weight: 300;
   margin-top: 5px;
@@ -260,32 +260,43 @@ p {
 }
 
 .space {
-  min-height: 30vh;
+  min-height: 80vh;
 }
 
-.download-container a:hover {
+.downloads-container a {
   text-decoration: none;
 }
 
+.downloads-container a:hover {
+  text-decoration: none;
+}
+
+.downloads-container > hr {
+  margin: 5px 0;
+}
+
 .download {
-  text-align: center;
-  background-color: none;
-  padding: 15px 0;
-  width: 200px;
-  border: 1px solid #333333;
-  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 5px;
+  margin: 0 0 5px 0;
   transition: all 0.2s ease;
+  border-radius: 5px;
 }
 
 .download:hover {
-  background-color: #DD7230;
-  border: 1px solid #DD7230;
+  background-color: #F2F4F3;
 }
 
 .download h3 {
   font-size: 16px;
   color: #333333;
-  margin: 0 0 10px 0;
+  margin: 0;
+}
+
+.download > h4 {
+  font-size: 16px;
+  margin: 0;
 }
 
 .download p {
