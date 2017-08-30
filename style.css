@@ -146,13 +146,13 @@ a:focus {
   visibility: hidden;
 }
 
-.tech-stack > h3, .downloads-container > h3, .features-container > h3 {
+.tech-stack h3, .downloads-container > h3, .features-container > h3 {
   font-size: 16px;
   font-weight: 300;
   margin-top: 5px;
 }
 
-.tech-stack > hr {
+.tech-stack hr {
   margin-top: 5px;
 }
 
@@ -344,4 +344,14 @@ a:focus {
   .video-box {
     display: inline-block;
   }
+}
+
+#frameworks {
+  max-width: 25%;
+  display: block;
+}
+
+#libraries {
+  max-width: 75%;
+
 }
