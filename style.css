@@ -146,10 +146,10 @@ a:focus {
   visibility: hidden;
 }
 
-.tech-stack h3, .downloads-container > h3, .features-container > h3 {
+.tech-stack h3, .downloads-container > h3, .links-container > h3 {
   font-size: 16px;
   font-weight: 300;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .tech-stack hr {
@@ -271,11 +271,11 @@ a:focus {
   min-height: 20vh;
 }
 
-.downloads-container a, .features-container a, {
+.downloads-container a, .links-container a, {
   text-decoration: none;
 }
 
-.downloads-container a:hover, .features-container a:hover {
+.downloads-container a:hover, .links-container a:hover {
   text-decoration: none;
 }
 
@@ -313,7 +313,7 @@ a:focus {
   margin: 0;
 }
 
-.features-container > hr {
+.links-container > hr {
   margin: 5px 0;
 }
 
