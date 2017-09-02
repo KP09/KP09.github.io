@@ -56,6 +56,22 @@ a:focus {
   padding: 0 10px 0 0;
 }
 
+.button-container {
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+
+.button {
+  color: white;
+  background-color: #181D27;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
 /* Specifics */
 
 .avatar-container  {
@@ -68,7 +84,7 @@ a:focus {
   height: 185px;
   border-radius: 2px;
   background-size: cover;
-  background-image: url(images/kees.jpg);
+  background-image: url(images/profile.jpg);
 }
 
 @media (max-width: 767px) {
@@ -115,7 +131,7 @@ a:focus {
 
 .nav-tab.active {
   color: #FEFEFF;
-  background-color: #DD7230;
+  background-color: #F79824;
   clip-path: polygon(0% 0%, 93% 0, 100% 50%, 93% 100%, 0% 100%);
   text-decoration: none;
 }
@@ -354,4 +370,8 @@ a:focus {
 #libraries {
   max-width: 75%;
 
+}
+
+#contact-details {
+  padding: 10px 0;
 }
