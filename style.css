@@ -21,8 +21,12 @@ h2, h3, h4 {
   color: #333333;
 }
 
-p {
+p, li {
   color: #565656;
+}
+
+ul {
+  padding: 5px 0 0 20px;
 }
 
 a:focus {
@@ -342,6 +346,11 @@ a:focus {
   font-size: 16px;
   font-weight: 400;
   margin: 15px 0 5px 0;
+}
+
+.social-thumbnail {
+  max-width: 30px;
+  max-height: 30px;
 }
 
 @media (max-width: 1024px) {
