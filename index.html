@@ -4,6 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kees Postma</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <!-- Loading animation -->
+    <script type="text/javascript">
+      $(window).on('load', function () {
+        $('#loader').fadeOut("fast");
+        $('#content').fadeIn("fast");
+      });
+    </script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <!-- Bootstrap CSS -->
@@ -26,7 +38,11 @@
     </script> -->
   </head>
   <body>
-    <div class="container">
+    <div id="loader">
+      <div id="spinner">
+      </div>
+    </div>
+    <div id="content" class="container">
       <div class="row">
         <!-- Avatar, name, and menu -->
         <div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-1">
@@ -45,8 +61,7 @@
         				<a href="#stack" class="nav-tab"><li>Tech stack</li></a>
         				<a href="#projects" class="nav-tab"><li>Projects</li></a>
                 <a href="#education" class="nav-tab"><li>Education</li></a>
-                <a href="#downloads" class="nav-tab"><li>Downloads</li></a>
-                <a href="#links" class="nav-tab"><li>Features</li></a>
+                <a href="#links" class="nav-tab"><li>Links and content</li></a>
         			</ul>
         		</nav>
           </div>
@@ -59,7 +74,7 @@
             <div class="spacer"></div>
             <div class="info-container">
               <h2>This is me</h2>
-              <p>With a degree in Investment and Financial Risk Management, experience as a business analyst for a leading banking software provider, several years in high-performance offshore yacht racing, and hands-on experience with web development, I have a unique set of skills ideally suited to managing the development of Fin Tech products.
+              <p>With a degree in Investment and Financial Risk Management, experience as a business analyst for a leading banking software provider, several years in high-performance offshore yacht racing, and hands-on experience with web development, I have a unique set of skills ideally suited to managing the development of web products.
               <br><br>
               I have a proven track record of rapidly gaining proficiency regardless of environment or job setting, and I'm always thinking of the human side of products by understanding what the customer wants, what the business goals are, and what the team needs.
               <br><br>
@@ -122,7 +137,7 @@
                 </div>
                 <hr>
                 <div class="flex-box flex-between">
-                  <span>August - October 2017</span>
+                  <span>July - October 2017</span>
                   <span>London, UK</span>
                 </div>
               </div>
@@ -335,7 +350,7 @@
             <div class="info-container">
               <h2>Tech stack</h2>
               <div class="tech-stack">
-                <h3>What I've used so far</h3>
+                <h3>Languages</h3>
                 <hr>
                 <div class="code-container">
                   <div class="code-box">
@@ -343,16 +358,12 @@
                     <h4>Ruby</h4>
                   </div>
                   <div class="code-box">
-                    <img class="code-icon" src="images/rails.png" alt="">
-                    <h4>Rails</h4>
+                    <img class="code-icon" src="images/rspec.png" alt="">
+                    <h4>RSpec</h4>
                   </div>
                   <div class="code-box">
-                    <img class="code-icon" src="images/postgresql.png" alt="">
-                    <h4>PostgreSQL</h4>
-                  </div>
-                  <div class="code-box">
-                    <img class="code-icon" src="images/heroku.png" alt="">
-                    <h4>Heroku</h4>
+                    <img class="code-icon" src="images/SQL.png" alt="">
+                    <h4>SQL</h4>
                   </div>
                   <div class="code-box">
                     <img class="code-icon" src="images/html.png" alt="">
@@ -364,32 +375,36 @@
                   </div>
                   <div class="code-box">
                     <img class="code-icon" src="images/scss.png" alt="">
-                    <h4>SCSS</h4>
+                    <h4>Sass</h4>
                   </div>
                   <div class="code-box">
                     <img class="code-icon" src="images/javascript.png" alt="">
                     <h4>Javascript</h4>
                   </div>
+                </div>
+                <h3>Frameworks</h3>
+                <hr>
+                <div class="code-container">
                   <div class="code-box">
-                    <img class="code-icon" src="images/bootstrap.png" alt="">
-                    <h4>Bootstrap</h4>
+                    <img class="code-icon" src="images/rails.png" alt="">
+                    <h4>Rails</h4>
                   </div>
                   <div class="code-box">
-                    <img class="code-icon" src="images/mui.svg" alt="">
-                    <h4>Material UI</h4>
+                    <img class="code-icon" src="images/node.png" alt="">
+                    <h4>Node.js</h4>
                   </div>
+                </div>
+                <h3>Database Systems</h3>
+                <hr>
+                <div class="code-container">
                   <div class="code-box">
-                    <img class="code-icon" src="images/jquery.png" alt="">
-                    <h4>jQuery</h4>
+                    <img class="code-icon" src="images/postgresql.png" alt="">
+                    <h4>PostgreSQL</h4>
                   </div>
-                  <div class="code-box">
-                    <img class="code-icon" src="images/git.png" alt="">
-                    <h4>Git</h4>
-                  </div>
-                  <div class="code-box">
-                    <img class="code-icon" src="images/github.png" alt="">
-                    <h4>GitHub</h4>
-                  </div>
+                </div>
+                <h3>Libraries</h3>
+                <hr>
+                <div class="code-container">
                   <div class="code-box">
                     <img class="code-icon" src="images/react.png" alt="">
                     <h4>React</h4>
@@ -399,20 +414,52 @@
                     <h4>Redux</h4>
                   </div>
                   <div class="code-box">
-                    <img class="code-icon" src="images/rspec.png" alt="">
-                    <h4>RSpec</h4>
+                    <img class="code-icon" src="images/bootstrap.png" alt="">
+                    <h4>Bootstrap</h4>
                   </div>
                   <div class="code-box">
-                    <img class="code-icon" src="images/sketch.png" alt="">
-                    <h4>Sketch</h4>
+                    <img class="code-icon" src="images/jquery.png" alt="">
+                    <h4>jQuery</h4>
+                  </div>
+                  <div class="code-box">
+                    <img class="code-icon" src="images/mui.svg" alt="">
+                    <h4>Material UI</h4>
+                  </div>
+                </div>
+                <h3>Tools</h3>
+                <hr>
+                <div class="code-container">
+                  <div class="code-box">
+                    <img class="code-icon" src="images/git.png" alt="">
+                    <h4>Git</h4>
+                  </div>
+                  <div class="code-box">
+                    <img class="code-icon" src="images/github.png" alt="">
+                    <h4>GitHub</h4>
+                  </div>
+                  <div class="code-box">
+                    <img class="code-icon" src="images/postman.png" alt="">
+                    <h4>Postman</h4>
+                  </div>
+                  <div class="code-box">
+                    <img class="code-icon" src="images/dbdesigner.png" alt="">
+                    <h4>DbDesigner</h4>
+                  </div>
+                  <div class="code-box">
+                    <img class="code-icon" src="images/heroku.png" alt="">
+                    <h4>Heroku</h4>
+                  </div>
+                  <div class="code-box">
+                    <img class="code-icon" src="images/trello.png" alt="">
+                    <h4>Trello</h4>
                   </div>
                   <div class="code-box">
                     <img class="code-icon" src="images/figma.png" alt="">
                     <h4>Figma</h4>
                   </div>
                   <div class="code-box">
-                    <img class="code-icon" src="images/postman.png" alt="">
-                    <h4>Postman</h4>
+                    <img class="code-icon" src="images/sketch.png" alt="">
+                    <h4>Sketch</h4>
                   </div>
                 </div>
               </div>
@@ -425,12 +472,25 @@
             <div class="info-container">
               <h2>Projects</h2>
               <div class="project-box flex-box">
-                <div class="project-thumbnail" style="background-image: url(images/marinecoursebooker.png);"></div>
+                <!-- <div class="project-thumbnail" style="background-image: url(images/marinecoursebooker.png);"></div> -->
+                <div class="project-info">
+                  <!-- <a href="#"  target="_blank"> -->
+                    <h3>Passage Logger</h3>
+                  <!-- </a> -->
+                  <p>Even in 2017, sailors usually keep track of their sailing experience either in a paper logbook or in an Excel spreadsheet. Paper logbooks get lost and excel spreadsheets are forgotten about. Enter Passage Logger! A simple app I'm building that allows sailors to keep track of their trips, miles, and time at sea.
+                  <br><br>
+                  My first goal is to ship an MVP web-app to start getting user feedback. After that I will consider whether I want to also work on a native iOS/Android app, or whether a web-app is enough. To give myself flexibility for this decision (and because I wanted to learn more about API development and React with Redux) I decided to build the app as a RESTful Rails API with a Postgres database serving data to a separate React and Redux front-end.</p>
+                </div>
+              </div>
+              <div class="project-box flex-box">
+                <!-- <div class="project-thumbnail" style="background-image: url(images/marinecoursebooker.png);"></div> -->
                 <div class="project-info">
                   <a href="http://www.brainpowered.me"  target="_blank">
-                    <h3>Passage Logger</h3>
+                    <h3>Brainpowered</h3>
                   </a>
-                  <p>Sailors, recreational or professional. </p>
+                  <p>Final project at the Le Wagon Coding Bootcamp, built with a team of three over the course of 10 working days. The idea arose from mutual frustrations with UK higher education: A) Coursework that students put a lot of effort into never gets looked at again once they graduate and B) The 'chicken and the egg' situation of needing work experience to get a job, but also needing a job to get work experience. Brainpowered allows students to complete real projects for real companies, allowing students to work on real-world issues and boost their professional profile and allowing companies to determine talent and motivation.
+                  <br><br>
+                  We designed the app in Sketch and implemented task management using a simple Trello board. The product is built in Ruby on Rails, with a PostgreSQL database and a Bootstrapped front-end built with HTML, SCSS, and jQuery. Version control was handled with git and GitHub and the product is hosted on Heroku.</p>
                 </div>
               </div>
             </div>
@@ -470,7 +530,7 @@
                     <div>
                       <h3>BSc Investment and Financial Risk Management</h3>
                       <a href="http://www.cass.city.ac.uk/" target="_blank"><h4>Cass Business School</h4></a>
-                      <p>Graduated with 1st Class degree with Honours from one of the leading schools for business in Europe (Financial Times) and for Finance and Account in the UK (The Guardian)</p>
+                      <p>Graduated with 1st Class degree with Honours from one of the leading schools for business, finance, and accounting in Europe.</p>
                     </div>
                   </div>
                   <a href="http://www.cass.city.ac.uk/" target="_blank">
@@ -491,7 +551,7 @@
                     <div>
                       <h3>International Baccalaureate Diploma</h3>
                       <a href="https://www.ais-antwerp.be/" target="_blank"><h4>Antwerp International School</h4></a>
-                      <p>Obtained the IB Diploma scoring 42 out of 45 points, well into the 98th percentile worldwide.</p>
+                      <p>Obtained the IB Diploma scoring 42 out of 45 points (98th percentile worldwide)</p>
                     </div>
                   </div>
                   <a href="https://www.ais-antwerp.be/" target="_blank">
@@ -508,39 +568,36 @@
             </div>
           </div>
 
-          <!-- Downloads -->
-          <div id="downloads">
+          <!-- Features -->
+          <div id="links">
             <div class="spacer"></div>
             <div class="info-container">
-              <div class="downloads-container">
-                <h2>Downloads</h2>
-                <!-- <h3>CV</h3>
-                <hr> -->
-                <!-- Conventional CV -->
-                <a href="resources/cv_kees_postma.pdf" target="_blank">
+              <h2>Links and content</h2>
+              <div class="links-container">
+                <h3>CV</h3>
+                <hr>
+                <!-- Business CV -->
+                <a href="resources/business_cv_kees_postma.pdf" target="_blank">
                   <div class="download">
-                    <h4>Professional CV</h3>
-                    <p>Last updated on 17 September 2017</p>
+                    <h4>Business CV</h3>
+                    <p>Last updated: November 2017</p>
                   </div>
                 </a>
                 <!-- Sailing CV -->
                 <a href="resources/sailing_cv_kees_postma.pdf" target="_blank">
                   <div class="download">
                     <h4>Sailing CV</h4>
-                    <p>Last updated on 18 July 2017</p>
+                    <p>Last updated: July 2017</p>
                   </div>
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Features -->
-          <div id="links">
-            <div class="spacer"></div>
-            <div class="info-container">
-              <h2>Features</h2>
-              <div class="links-container">
-                <h3>Articles & Blogs</h3>
+                <!-- Le Wagon -->
+                <h3>Le Wagon coding bootcamp</h3>
+                <hr>
+                <div class="video-box">
+                  <h3>Le Wagon Demo Day (5:40)</h3>
+                  <iframe src="https://www.youtube.com/embed/xkr4inIoj5I?start=341" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Team Maverick</h3>
                 <hr>
                 <a href="https://www.maverick49.com/news-2/kees-postma-rorc-transatlantic-blog-day-8" target="_blank">
                   <div class="download">
@@ -554,26 +611,6 @@
                     <p>November 2016</p>
                   </div>
                 </a>
-                <a href="https://www.garmin.com/en-GB/blog/clipper-race-round-up-from-kees-postma/" target="_blank">
-                  <div class="download">
-                    <h4>Clipper Race round up from Kees Postma</h4>
-                    <p>July 2014</p>
-                  </div>
-                </a>
-                <a href="https://clipperroundtheworld.com/news/archive-article/student-set-to-circumnavigate-the-globe" target="_blank">
-                  <div class="download">
-                    <h4>Student set to circumnavigate the globe</h4>
-                    <p>May 2013</p>
-                  </div>
-                </a>
-              </div>
-              <div class="links-container" id="videos">
-              <h3>Videos</h3>
-              <hr>
-                <div class="video-box">
-                  <h3>Le Wagon Demo Day (5:40)</h3>
-                  <iframe src="https://www.youtube.com/embed/xkr4inIoj5I?start=341" frameborder="0" allowfullscreen></iframe>
-                </div>
                 <div class="video-box">
                   <h3>Round the Island Race 2017 review</h3>
                   <iframe src="https://www.youtube.com/embed/DZ4roQPp6yw" frameborder="0" allowfullscreen></iframe>
@@ -590,6 +627,29 @@
                   <h3>Pre-Rolex Giraglia Cup 2016 interview</h3>
                   <iframe src="https://www.youtube.com/embed/bnsmSMZ2LDs" frameborder="0" allowfullscreen></iframe>
                 </div>
+                <h3>Clipper Round the World Yacht Race</h3>
+                <hr>
+                <a href="https://www.garmin.com/en-GB/blog/clipper-race-round-up-from-kees-postma/" target="_blank">
+                  <div class="download">
+                    <h4>Clipper Race round up from Kees Postma</h4>
+                    <p>July 2014</p>
+                  </div>
+                </a>
+                <a href="https://clipperroundtheworld.com/news/archive-article/student-set-to-circumnavigate-the-globe" target="_blank">
+                  <div class="download">
+                    <h4>Student set to circumnavigate the globe</h4>
+                    <p>May 2013</p>
+                  </div>
+                </a>
+                <!-- Cass -->
+                <h3>Cass Business School</h3>
+                <hr>
+                <a href="resources/Kees_Postma_Cass_Business_School_Dissertation.pdf" target="_blank">
+                  <div class="download">
+                    <h4>Final Year Dissertation</h4>
+                    <p>March 2012</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
